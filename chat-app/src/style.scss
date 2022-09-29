@@ -1,3 +1,5 @@
+$darkColor: #2f2d52;
+
 .formContainer {
   background-color: #a7bcff;
   height: 100vh;
@@ -218,9 +220,24 @@
               background-color: white;
               padding: 10px 20px;
               border-radius: 0px 10px 10px 10px;
+              max-width: max-content;
             }
             img{
               width: 50%
+            }
+          }
+
+          &.owner{
+            flex-direction: row-reverse;
+
+            .messageContent{
+              align-items: flex-end;
+
+              p{
+                background-color: #7b96ec;
+                color: white;
+                border-radius: 10px 0px 10px 10px;
+              }
             }
           }
         }
